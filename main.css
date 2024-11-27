@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(330, 100%, 97%);
+  font-family: "Outfit", serif;
+}
+@media (width <= 480px) {
+  body {
+    background-color: white;
+    margin: 0;
+  }
+}
+b {
+  font-weight: 600;
+}
+hr {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 700px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+@media (width <= 480px) {
+  .container {
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
+    border-radius: 6px;
+  }
+  .container > div {
+    padding: 0 25px;
+  }
+}
+.container img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+@media (width <= 480px) {
+  .container img {
+    border-radius: 0;
+    max-width: 100%;
+  }
+}
+
+.container .simple h3 {
+  font-size: 36px;
+  margin: 20px 0 15px;
+  font-family: "Young Serif";
+  font-weight: normal;
+}
+.container .simple p {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.container .pre {
+  padding: 20px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+}
+@media (width <= 480px) {
+  .container .pre {
+    padding: 40px;
+  }
+}
+.container .pre span {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .pre ul,
+.container .ingredients ul,
+.container .instructions ol {
+  padding: 0;
+}
+
+.container .pre ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.container .pre ul li,
+.container .ingredients ul li,
+.container .instructions ol li {
+  color: #333;
+  position: relative;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.container > div h4 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif";
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.container .ingredients ul li::marker,
+.container .instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.container .nutrition p {
+  display: flex;
+  color: #333;
+  padding: 10px;
+}
+.container .nutrition .table p:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.container .nutrition span {
+  flex: 1;
+}
+
+.container .nutrition b {
+  color: hsl(14, 45%, 36%);
+  flex: 1;
+}
